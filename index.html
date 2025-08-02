@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brute Force Attack Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <h1>🔓 Brute Force Panel</h1>
+    <div class="selector">
+      <label>Select Platform:</label>
+      <select id="platformSelect">
+        <option value="instagram">Instagram</option>
+        <option value="facebook">Facebook</option>
+        <option value="tiktok">TikTok</option>
+        <option value="snapchat">Snapchat</option>
+      </select>
+      <img id="platformLogo" src="assets/instagram.png" alt="logo"/>
+    </div>
+    <input type="text" id="usernameInput" placeholder="Enter Username" />
+    <button onclick="startAttack()">Start Attack</button>
+    <div id="console" class="console"></div>
+    <div id="cooldownOverlay" class="cooldown-overlay hidden">
+      <p>Too many attempts<br>Retrying in <span id="cooldownTime">30</span>s</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
